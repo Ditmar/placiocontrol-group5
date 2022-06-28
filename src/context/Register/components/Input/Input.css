@@ -1,0 +1,35 @@
+.regular-style {
+    width: 494px;
+    height: 20px;
+    margin-top: 2%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+    outline: none;
+    border: 1px solid #F0F1F7;
+    border-radius: 8px;
+    transition: 0.2s linear;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}
+.regular-style:focus {
+    transform: translateX(-2px);
+    border-radius: 5px;
+}
+.input-error {
+    width: 494px;
+    height: 20px;
+    margin-top: 2%;
+    padding: 15px;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #d20b0b;
+    outline: none;
+    border: 1px solid #d20b0b;
+    border-radius: 8px;
+    transition: 0.2s linear;
+    margin-bottom: 25px;
+    margin-left: 15px;
+}

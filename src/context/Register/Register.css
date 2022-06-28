@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(76, 76, 76);
+}
+
+.form-register {
+    width: 558px;
+    height: 670px;
+    margin: 2% auto;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 20px;
+    bottom: 0px;
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+}
+
+.sumbit-register {
+    display: inline-block;
+    color: #f6f6f7;
+    width: 525px;
+    height: 55px;
+    padding: 0 20px;
+    background: rgb(78, 119, 252);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s linear;
+    margin: 7% auto;
+    letter-spacing: 0.05em;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+
+.title-one {
+    text-align: center;
+    color: #8a8b94;
+    margin-top: 0px;
+    font-size: 20px;
+    
+}
+
+.title-two {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #8a8b94;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    
+}
+
+.title-three {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #8a8b94;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.label-input-error{
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin: 0 0 10px;
+    color: rgb(215, 8, 8);
+    font-size: 12px;
+    font-weight: semibold;
+    line-height: 1;
+    letter-spacing: .2em;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.logo2 {
+    font-family: 'Playfair Display', serif;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0px auto;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
