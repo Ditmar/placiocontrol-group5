@@ -1,0 +1,16 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.list-group-item-first{
+    background: white;
+    padding: 1.5rem;
+}
+body{
+    background: rgb(240, 240, 240);
+}
+.list-group-item{
+    height: 5rem;
+}
+.contenedor{
+    margin-top: 6.25rem;
+}
