@@ -8,9 +8,10 @@ import {
 import { Works } from "./Works/Works"
 import { Review } from "./Review/Review"
 import { Register } from "./Register/Register"
-import { Login } from "./Login/Login"
+import { Login } from "./Login/login"
 import { ListDocs } from "./listDocs/ListDocs"
 import { Home } from "./Home/Home"
+
 
 
 const Navigation = () => {
