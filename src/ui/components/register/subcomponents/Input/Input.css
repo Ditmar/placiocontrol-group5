@@ -1,0 +1,35 @@
+.regular-style {
+    width: 30.875rem;
+    height: 1.25rem;
+    margin-top: 2%;
+    padding: 0.938rem;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #5E6472;
+    outline: none;
+    border: 0.063rem solid #F0F1F7;
+    border-radius: 0.5rem;
+    transition: 0.2s linear;
+    margin-top: 0rem;
+    margin-bottom: 1.563rem;
+    margin-left: 0.938rem;
+}
+.regular-style:focus {
+    transform: translateX(-0.125rem);
+    border-radius: 5px;
+}
+.input-error {
+    width: 30.875rem;
+    height: 1.25rem;
+    margin-top: 2%;
+    padding: 0.938rem;
+    font-size: 16px;
+    font-family: 'Abel', sans-serif;
+    color: #d20b0b;
+    outline: none;
+    border: 0.063rem solid #d20b0b;
+    border-radius: 0.5rem;
+    transition: 0.2s linear;
+    margin-bottom: 1.563rem;
+    margin-left: 0.938rem;
+}
