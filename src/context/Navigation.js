@@ -8,7 +8,7 @@ import {
 import { Works } from "./Works/Works"
 import { Review } from "./Review/Review"
 import { Register } from "./Register/Register"
-import { Login } from "./Login/login"
+import { Login } from "./Login/Login"
 import { ListDocs } from "./listDocs/ListDocs"
 import { Home } from "./Home/Home"
 
