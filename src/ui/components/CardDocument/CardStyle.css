@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eef2f7;
+    font-size: 1.2rem;
+}
+.overall {
+    align-items: center;
+    justify-content: center;
+    min-height: 12.5rem;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.cardDocument{
+    display: flex;
+    align-items: center;
+    justify-content: center;width: 32rem;
+    height: 19rem;
+    margin: 0.6rem 0.625rem 3rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 3px 13px 1px #a1acbd;
+}
+.overalltext {
+    text-align: center;
+    font-family:'Segoe UI'; 
+    height: 70%;
+    padding: 2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-left: 1.5rem;
+    margin-top: 2rem;
+}
+.author {
+    font-weight: bold;
+    text-align: left;
+    margin-top: -1.2rem;
+    font-size: 1.2rem;
+    width: 15rem;
+}
+.description {
+    text-align: left;
+    font-size: 1rem;
+    margin-top: 3rem;
+    margin-right: 5rem;
+}
+.page {
+    font-size: 0.875rem;
+    margin-right: -18rem;
+    margin-top: -4.5rem;
+    color: #9FA2B4;
+}
+.line {
+    border: 0.063rem solid #DFE0EB;
+    margin-right: -4.5rem;
+    margin-left: -1rem;
+    margin-top: 3.125rem;
+}
+.imagedetails {
+    text-align: center;
+    font-family:'Segoe UI';
+    height: 70%;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+.details {
+    font-size: 0.875rem;
+    margin-top: -0.4rem;
+    font-family: 'Segoe UI';
+    color: #3751FF;
+}
+.cover {
+    height: 12rem;
+    margin-top: 0.7rem;
+    margin-right: 1rem;
+    width: auto;
+}
