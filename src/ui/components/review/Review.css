@@ -1,0 +1,138 @@
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    font-family: Mulish;
+    font-weight: 32px;
+    line-height: 1.5;
+    background-color:#E5E5E5;
+    
+  
+  }
+  
+  .formFile {
+    background-color: #FFFFFF;
+    padding-top: 30px;
+  }
+  
+  .heading {
+    width: 1048px;
+    height: 60px;
+    border-radius: 6px;
+    background-color: #4497FA;
+  
+  
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    padding-top: 16px;
+    padding-left: 21px;
+    padding-bottom: 12px;
+    padding-right: 14px;
+    margin-bottom: 16px;
+  }
+  
+  .inputDF {
+    position: relative;
+    width: 1048px;
+    height: 475px;
+    border: 1px dashed #000000;
+    background-color: #FFFFFF;
+  }
+  
+  
+  .inputDF input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+  
+  .btnSubmit {
+    width: 316px;
+    height: 48px;
+    background-color: #3751FF;
+    box-shadow: 0px 4px 12px rgba(55, 81, 255, 0.24);
+    border-radius: 8px;
+    border: 0px;
+    margin-top: 25px;
+  }
+  .btnSubmit:hover{
+    color: #FFFFFF;
+  }
+  
+  .inputDF:hover,
+  .inputDF.draging {
+    opacity: 0.6;
+    background-color: rgb(192, 220, 240);
+  }
+  
+  
+  .inputDF img {
+    width: 50px;
+    height: auto;
+  }
+  .containerFiles{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+  
+  }
+  
+  .containerFiles p{
+    width: 100%;
+   
+  
+  }
+  .containerUpload{
+    position: relative;
+    width: 250px;
+    height: auto;
+    margin: 0.2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    cursor: pointer;
+    background-color: #4497FA;
+  }
+  
+  .containerUpload p{
+    width: 150px;
+    word-wrap: break-word;
+    font-size: small;
+    
+  }
+  .btnContainer{
+    display: flex;
+    left: 200px;}
+  .btndelete{
+    cursor: pointer;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    color: #FFFFFF;
+    font-weight: 500;
+    
+    border-radius: 100rem;
+    font-size: 25px;
+    border: 0px;
+    
+  }
+  .btndelete:hover{
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+    border:3px solid red;
+  }
