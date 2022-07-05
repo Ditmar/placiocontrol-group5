@@ -1,20 +1,19 @@
-.bo{
-    position: relative;
-    width: 90rem;
-    height: 53.75rem;
-    
-    /* sidebar / bg */
-    
+body{
     background: #363740;
 }
-.login{
+.container{
+    position: absolute;
+    width: 90rem;
+    height: 53.75rem;
+}
+.container-login{
     position: absolute;
     left: 33.125rem;
     right: 33.125rem;
     top: 8.688rem;
     bottom: 8.688rem;
 }
-.cards{
+.container-cards{
     position: absolute;
     left: 0rem;
     right: 0rem;
@@ -22,7 +21,7 @@
     bottom: 0rem;
     
 }
-.sheet{
+.container-sheet{
     box-sizing: border-box;
 
     position: absolute;
@@ -39,14 +38,12 @@
     border: 0.063rem solid #DFE0EB;
     border-radius: 0.5rem;
 }
-.pla{
+.plagiarism-tytle{
     position: absolute;
     height: 1.875rem;
     left: 2rem;
     right: 2rem;
     top: 8.563rem;
-    
-    /* Bold/24px */
     
     font-family: 'Mulish';
     font-style: normal;
@@ -56,31 +53,24 @@
     text-align: center;
     letter-spacing: 0.019rem;
     
-    /* grayscale / black */
-    
     color: #252733;
 }
-.for{
+.letter_forgot{
     position: absolute;
     width: 5.313rem;
     height: 0.813rem;
     right: 2rem;
     top: 21.563rem;
     
-    /* Regular/10px */
-    
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
     font-size: 0.625rem;
     line-height: 0.813rem;
-    /* identical to box height */
     
     text-align: right;
     letter-spacing: 0.006rem;
-    
-    /* grayscale / gray */
-    
+
     color: #9FA2B4;
     
 }
@@ -91,7 +81,7 @@
     left: calc(50% - 3rem/2);
     top: 3rem;
 }
-.elipse{
+.ellipse{
     position: absolute;
     left: 0%;
     right: 0%;
@@ -100,7 +90,7 @@
     border-radius: 100%;
     background: #3751FF;
 }
-.elipse div{
+.ellipse div{
     position: absolute;
     left: 34.38%;
     right: 28.12%;
@@ -111,57 +101,44 @@
     border-bottom-right-radius: 50%;
     background: linear-gradient(143.7deg, rgba(255, 255, 255, 0.7) 0%, #FFFFFF 100%);
 }
-.plagio{
-    /* Plagio Control */
+.plagiarism-style{
     position: absolute;
     height: 1.5rem;
     left: 2rem;
     right: 2rem;
     top: 5.313rem;
 
-    /* Bold/19px */
-
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 700;
     font-size: 1.188rem;
     line-height: 1.5rem;
-    /* identical to box height */
-
     text-align: center;
     letter-spacing: 0.025rem;
-
-    /* sidebar / gray */
 
     color: #A4A6B3;
 
     opacity: 0.7;
 }
-.enter{
-    /* Enter your email and password below */
+.text-email{
     position: absolute;
     height: 1.25rem;
     left: 2rem;
     right: 2rem;
     top: 11.875rem;
 
-    /* Regular/14px */
-
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    /* identical to box height, or 143% */
 
     text-align: center;
     letter-spacing: 0.019rem;
 
-    /* grayscale / gray */
-
     color: #9FA2B4;
 }
-.email{
+.box-email{
     position: absolute;
     height: 4rem;
     left: 2rem;
@@ -175,8 +152,6 @@ label{
     right: 0rem;
     top: 0rem;
 
-    /* Bold/12px */
-
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 700;
@@ -184,8 +159,6 @@ label{
     line-height: 0.938rem;
     letter-spacing: 0.019rem;
     text-transform: uppercase;
-
-    /* grayscale / gray */
 
     color: #9FA2B4;
 }
@@ -198,66 +171,52 @@ input{
     top: 1.375rem;
     bottom: 0rem;
     
-    /* grayscale / extra light */
-    
     background: #FCFDFE;
-    /* grayscale / gray lightest */
     
     border: 1px solid #F0F1F7;
     border-radius: 0.5rem;
 }
-.email input ::placeholder{
-    /* textfield */
+.box-email input ::placeholder{
     position: absolute;
     left: 1rem;
     right: 0.5rem;
     top: 2.063rem;
     bottom: 0.688rem;
 
-    /* Regular/14px */
-
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    /* identical to box height, or 143% */
 
     letter-spacing: 0.019rem;
-
-    /* grayscale / gray dark */
 
     color: #4B506D;
 
     opacity: 0.4;
 }
-.pass{
+.box-password{
     position: absolute;
     height: 4rem;
     left: 2rem;
     right: 2rem;
     top: 22.125rem;
 }
-.pass input ::placeholder{
+.box-password input ::placeholder{
     position: absolute;
     left: 1rem;
     right: 0.5rem;
     top: 2.063rem;
     bottom: 0.688rem;
-    
-    /* Regular/14px */
-    
+
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    /* identical to box height, or 143% */
     
     letter-spacing: 0.019rem;
    
-    /* grayscale / gray dark */
-    
     color: #4B506D;
     
     opacity: 0.4;
@@ -269,7 +228,7 @@ input{
     right: 1rem;
     top: calc(50% - 1.563rem/2 + 0.688rem);
 }
-.vec{
+.vector{
     position: absolute;
     color: #9FA2B4;
 }
@@ -280,7 +239,6 @@ button{
     right: 2rem;
     top: 27.625rem;
     
-    /* button / accent default */
     background: #3751FF;
     cursor: pointer;
     border-radius: 0.5rem;
@@ -294,81 +252,65 @@ button{
     right: 1.5rem;
     top: calc(50% - 1.25rem/2 + 0.063rem);
     
-    /* SemiBold/14px */
-    
     font-family: 'Mulish';
     font-style: normal;
     
     font-size: 0.875rem;
     line-height: 1.25rem;
-    /* identical to box height, or 143% */
     
     text-align: center;
     letter-spacing: 0.013rem;
-    
-    /* grayscale / white */
-    
+
     color: #FFFFFF;
 }
-.acount{
+.acount-style{
     position: absolute;
     width: 13.063rem;
     height: 1.25rem;
     left: 5.5rem;
     top: 32.625rem;
 }
-.sing{
-    position: absolute;
-    width: 3.188rem;
-    height: 1.25rem;
-    left: calc(50% - 3.188rem/2 + 5.094rem);
-    bottom: 2.5rem;
-}
-.as{
+
+.second-end-text{
     position: absolute;
     height: 1.25rem;
     left: 0rem;
     right: 0rem;
     top: calc(50% - 1.25rem/2);
-    
-    /* SemiBold/14px */
-    
+
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 600;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    /* identical to box height, or 143% */
-    
+
     text-align: center;
     letter-spacing: 0.013rem;
-    
-    /* Main/Blue */
+
     text-decoration: none;
     color: #3751FF;
-}
-.lo{
     position: absolute;
     width: 3.188rem;
     height: 1.25rem;
     left: calc(50% - 3.75rem/2 + 5.094rem);
     bottom: 2.5rem;
 }
-.no{
+
+.first-end-text{
     position: absolute;
     width: 9.313rem;
     height: 1.25rem;
     left: calc(50% - 9.063rem/2 - 1.719rem);
     bottom: 0rem;
-    /* Regular/14px */
+
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.25rem;
-    /* identical to box height, or 143% */
+
     text-align: center;
     letter-spacing: 0.019rem;
-    /* grayscale / gray */
+
     color: #9FA2B4;
 }
