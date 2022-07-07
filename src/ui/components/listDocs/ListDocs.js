@@ -4,11 +4,14 @@ import TesisServices from './List_Tesis';
 
 import './listarTesis.css'
 import { TableListTble } from './tableListTesis/TableListTesis';
-
+import Input from './subcomponents/input/Input'
 
 const ListDocsUi=()=>{
 
     const [listTesis, setLisTesis] = useState([]);
+    const [title, setTitle] = useState('');
+    const [autor, setAutor] = useState('');
+    const [date, setDate] = useState('');
 
     useEffect(()=>{
         let listT =  TesisServices.listarTesis();
@@ -17,14 +20,50 @@ const ListDocsUi=()=>{
         );
     },[])
 
+    function handleChange(name, value) {
+        if (name === 'title') {
+            setTitle(value)
+        } 
+        if ( name === 'autor' ) {
+            setAutor(value)
+        } 
+        if ( name === 'date' ) {
+            setDate(value)
+        }
+    }
+
     return(
         <div className='content-listar-tesis'>
             <div className='content-header-secction'>
                 <div className='subtile-list'>Lista</div>
                 <div className='content-box'>
-                    <input className='box-gray'></input>
-                    <input className='box-gray'></input>
-                    <input className='box-gray'></input>
+                    <Input  
+                        attribute={{
+                            name:'title',
+                            type:'text',
+                            placeholder:''
+                        }}
+                        handleChange={handleChange}
+                        param={''}
+                    />
+                    <Input  
+                        attribute={{
+                            name:'autor',
+                            type:'text',
+                            placeholder:''
+                        }}
+                        handleChange={handleChange}
+                        param={''}
+                    />
+                    <Input  
+                        attribute={{
+                            name:'date',
+                            type:'text',
+                            placeholder:''
+                        }}
+                        handleChange={handleChange}
+                        param={''}
+                    />
                 </div>
                 <div className='content-filters'>
                     <div className='option-filters'>

@@ -5,6 +5,7 @@ import img7 from './assets/avatar/img/7.jpg';
 import img8 from './assets/avatar/img/8.jpg';
 import img9 from './assets/avatar/img/9.jpg';
 import img10 from './assets/avatar/img/10.jpg';
+import img3 from './assets/avatar/img/3.jpg'
 
 
 
@@ -15,7 +16,7 @@ class TesisServices{
         // relizar la peticion a al api o bacnkend
         const ListTesis= [
             {
-                urlImageAvatar:img4,
+                urlImageAvatar:img5,
                 title:"Contact Email not Linked",
                 autor:"Tom Cruise",
                 fechaPublicacion:"Updated 1 day ago",
@@ -24,8 +25,29 @@ class TesisServices{
                 fechaAuto:"on 24.05.2019"
             },
             {
-                urlImageAvatar:img5,
-                title:"CAdding Images to Featured Posts",
+                urlImageAvatar:img8,
+                title:"Adding Images to Featured Posts",
+                autor:"Tom Cruise",
+                fechaPublicacion:"Updated 1 day ago",
+                ultimaEdicion:"6:30 PM",
+                descargas:"low",
+                fechaAuto:"on 24.05.2019"
+            },
+         
+           
+            {
+                urlImageAvatar:img3,
+                title:"Downtime since last week",
+                autor:"Tom Cruise",
+                fechaPublicacion:"Updated 1 day ago",
+                ultimaEdicion:"6:30 PM",
+                descargas:"heigh",
+                fechaAuto:"on 24.05.2019"
+            },
+           
+            {
+                urlImageAvatar:img7,
+                title:"Downtime since last week",
                 autor:"Tom Cruise",
                 fechaPublicacion:"Updated 1 day ago",
                 ultimaEdicion:"6:30 PM",
@@ -34,15 +56,6 @@ class TesisServices{
             },
             {
                 urlImageAvatar:img6,
-                title:"When will I be charged this month?",
-                autor:"Tom Cruise",
-                fechaPublicacion:"Updated 1 day ago",
-                ultimaEdicion:"6:30 PM",
-                descargas:"heigh",
-                fechaAuto:"on 24.05.2019"
-            },
-            {
-                urlImageAvatar:img7,
                 title:"Payment not going through",
                 autor:"Tom Cruise",
                 fechaPublicacion:"Updated 1 day ago",
@@ -51,30 +64,12 @@ class TesisServices{
                 fechaAuto:"on 24.05.2019"
             },
             {
-                urlImageAvatar:img8,
-                title:"Unable to add replies",
-                autor:"Tom Cruise",
-                fechaPublicacion:"Updated 1 day ago",
-                ultimaEdicion:"6:30 PM",
-                descargas:"low",
-                fechaAuto:"on 24.05.2019"
-            },
-            {
-                urlImageAvatar:img9,
-                title:"Downtime since last week",
-                autor:"Tom Cruise",
-                fechaPublicacion:"Updated 1 day ago",
-                ultimaEdicion:"6:30 PM",
-                descargas:"heigh",
-                fechaAuto:"on 24.05.2019"
-            },
-            {
-                urlImageAvatar:img10,
+                urlImageAvatar:img4,
                 title:"Referral Bonus",
                 autor:"Tom Cruise",
                 fechaPublicacion:"Updated 1 day ago",
                 ultimaEdicion:"6:30 PM",
-                descargas:"heigh",
+                descargas:"normal",
                 fechaAuto:"on 24.05.2019"
             },
             {

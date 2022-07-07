@@ -1,4 +1,6 @@
 import React, {useEffect, useState} from 'react';
+import { BtnDownload } from '../subcomponents/btnDownloader/BtnDownloader';
+import { ImageAvatar } from '../subcomponents/ImageAvatar/ImageAvatar';
 
 import './tableListTesis.css';
 
@@ -14,8 +16,6 @@ export const TableListTble=({listTesis=[]})=>{
 
 
     const handlePagination=(page=0)=>{
-    
-        
     }
 
     return(
@@ -24,21 +24,19 @@ export const TableListTble=({listTesis=[]})=>{
                 <thead>
                 <tr>
                     <th className='title-table'>Detalle</th>
-                    <th className='title-table'>Autor</th>
-                    <th className='title-table'>Editar</th>
-                    <th className='title-table'>Descargar</th>
+                    <th className='title-autor'>Autor</th>
+                    <th className='title-editar'>Editar</th>
+                    <th className='title-descarga'>Descargar</th>
                 </tr>
                 </thead>
-                <tbody>
-
-                    
+                <tbody>  
                 {
                     listTesis.map((d,i)=>{
                         return <tr  className='tr-tablle' key={i}>
                             <td>
                                 <div className='detalle'>
                                     <div className='avatar'>
-                                        <img alt='' height='57px' width='58px'  src={d.urlImageAvatar} />
+                                        <ImageAvatar urlImage={d.urlImageAvatar} sizeHeight='44px' sizeWidth='44px' ur></ImageAvatar>
                                     </div>
                                     <div className='data-autor'>
                                         <div className='title'>
@@ -69,9 +67,7 @@ export const TableListTble=({listTesis=[]})=>{
                             </td>
                             <td>
                                 <div className='data-descarga'>
-                                    <div className={d.descargas}>
-                                        {d.descargas}
-                                    </div>
+                                    <BtnDownload label={d.descargas} backgroundColor='#29CC97'></BtnDownload>
                                 </div>
                             </td>
                             <td>

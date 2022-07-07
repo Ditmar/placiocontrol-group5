@@ -9,10 +9,27 @@
 }
 .title-table{
     color: #9FA2B4;
+    text-align: left;
+    padding-left: 40px;
+}
+.title-autor{
+    color: #9FA2B4;
+    text-align: center;
+    padding-left: 40px;
+}
+.title-editar{
+    color: #9FA2B4;
+    text-align: center;
+    /* padding-left: 90px; */
+}
+.title-descarga{
+    color: #9FA2B4;
+    text-align: center;
+    /* padding-left: 90px; */
 }
 .tr-tablle td div{
-    margin-bottom: 4px;
-    margin-top: 4px;
+    margin-bottom: 2px;
+    margin-top: 2px;
 }
 
 .avatar{

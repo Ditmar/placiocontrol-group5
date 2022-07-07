@@ -75,7 +75,7 @@
 
 .content-header-secction{
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     margin: 20px;
 }
 
@@ -85,19 +85,11 @@
     gap:20px;
     width: 100%;
     justify-content: space-around;
-   
     margin-left: 20px;
     margin-right: 20px;
 }
-.box-gray{
-    background-color: #F0F1F7;
-    width: 100%;
-    height: 42px;
-    border-radius: 8px;  
-    outline: none;  
-    border: 0;
-    
-}
+
+
 .content-filters{
     display: flex;
     justify-content: space-between;
@@ -115,7 +107,6 @@
 
 
 .option-filters{
-   
     display: flex;
     margin-left: 10px;
     margin-right: 10px;
@@ -135,4 +126,24 @@
  
     height: 80% !important;
     overflow-y: hidden;
+}
+@media screen and (max-width:570px) {
+    .content-box{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:570px){
+    .content-header-secction{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+
+    }
+    .content-filters{
+        display: flex;
+        justify-content: left;
+        margin-top: 12px;
+    }
+    
 }
