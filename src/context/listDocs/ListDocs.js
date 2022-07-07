@@ -1,6 +1,5 @@
 import React from 'react';
-import ListDocsUi from '../../ui/components/listDocs/ListDocs';
-// import ListDocsl from '../../ui/components/listDocs/ListDocs'
+import  { ListDocsUi } from '../../ui/components/listDocs/ListDocs';
 export const ListDocs = () =>{
     return(
         <div>

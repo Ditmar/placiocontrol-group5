@@ -4,9 +4,9 @@ import TesisServices from './List_Tesis';
 
 import './listarTesis.css'
 import { TableListTble } from './tableListTesis/TableListTesis';
-import Input from './subcomponents/input/Input'
+import  { Input } from './subcomponents/input/Input'
 
-const ListDocsUi=()=>{
+export const ListDocsUi=()=>{
 
     const [listTesis, setLisTesis] = useState([]);
     const [title, setTitle] = useState('');
@@ -44,7 +44,7 @@ const ListDocsUi=()=>{
                             placeholder:''
                         }}
                         handleChange={handleChange}
-                        param={''}
+                        param=""
                     />
                     <Input  
                         attribute={{
@@ -53,7 +53,7 @@ const ListDocsUi=()=>{
                             placeholder:''
                         }}
                         handleChange={handleChange}
-                        param={''}
+                        param=""
                     />
                     <Input  
                         attribute={{
@@ -62,7 +62,7 @@ const ListDocsUi=()=>{
                             placeholder:''
                         }}
                         handleChange={handleChange}
-                        param={''}
+                        param=""
                     />
                 </div>
                 <div className='content-filters'>
@@ -86,5 +86,3 @@ const ListDocsUi=()=>{
         </div>
     );
 }
-
-export default ListDocsUi;

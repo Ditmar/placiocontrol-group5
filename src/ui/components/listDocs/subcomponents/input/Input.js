@@ -1,7 +1,7 @@
 
 import React from "react";
 import './input.css'
- const Input = ({attribute, handleChange, param}) =>{
+export const Input = ({attribute, handleChange, param}) =>{
     return(
         <div>
             <input 
@@ -15,4 +15,4 @@ import './input.css'
     );
 }
 
-export default Input;
+// export default Input;

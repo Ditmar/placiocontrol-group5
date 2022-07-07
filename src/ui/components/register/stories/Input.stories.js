@@ -1,5 +1,5 @@
 import React from "react";
-import Input  from "../subcomponents/Input/Input";
+import { Input }  from "../subcomponents/Input/Input";
 import handleChange from "../Register";
 export default {
     title: 'ui/components/register/subcomponents/Input',

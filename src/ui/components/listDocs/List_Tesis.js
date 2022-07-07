@@ -37,7 +37,7 @@ class TesisServices{
            
             {
                 urlImageAvatar:img3,
-                title:"Downtime since last week",
+                title:"When will I be charged this month?",
                 autor:"Tom Cruise",
                 fechaPublicacion:"Updated 1 day ago",
                 ultimaEdicion:"6:30 PM",
@@ -47,7 +47,7 @@ class TesisServices{
            
             {
                 urlImageAvatar:img7,
-                title:"Downtime since last week",
+                title:"Payment not going through",
                 autor:"Tom Cruise",
                 fechaPublicacion:"Updated 1 day ago",
                 ultimaEdicion:"6:30 PM",
@@ -56,7 +56,7 @@ class TesisServices{
             },
             {
                 urlImageAvatar:img6,
-                title:"Payment not going through",
+                title:"Unable to add replies",
                 autor:"Tom Cruise",
                 fechaPublicacion:"Updated 1 day ago",
                 ultimaEdicion:"6:30 PM",
@@ -65,7 +65,7 @@ class TesisServices{
             },
             {
                 urlImageAvatar:img4,
-                title:"Referral Bonus",
+                title:"Downtime since last week",
                 autor:"Tom Cruise",
                 fechaPublicacion:"Updated 1 day ago",
                 ultimaEdicion:"6:30 PM",
@@ -74,6 +74,15 @@ class TesisServices{
             },
             {
                 urlImageAvatar:img10,
+                title:"Referral Bonus",
+                autor:"Tom Cruise",
+                fechaPublicacion:"Updated 1 day ago",
+                ultimaEdicion:"6:30 PM",
+                descargas:"heigh",
+                fechaAuto:"on 24.05.2019"
+            },
+            {
+                urlImageAvatar:img9,
                 title:"How do I change my password?",
                 autor:"Tom Cruise",
                 fechaPublicacion:"Updated 1 day ago",
