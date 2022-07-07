@@ -1,5 +1,5 @@
 import React from 'react';
-import   {Input}  from '../subcomponents/input/Input';
+import   {Input}     from '../subcomponents/input/Input';
 import handleChange from '../ListDocs'
 export default {
     title:'ui/components/listdocs/Input',
