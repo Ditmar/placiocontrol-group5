@@ -22,7 +22,6 @@ body{
     margin: 0.6rem 0.625rem 3rem;
     background-color: #ffffff;
     border-radius: 4px;
-    box-shadow: 0 3px 13px 1px #a1acbd;
 }
 .overalltext {
     text-align: center;
@@ -68,6 +67,8 @@ body{
     font-weight: 400;
 }
 .details {
+    text-align: right;
+    margin-right: 1.3rem;
     font-size: 0.875rem;
     margin-top: -0.4rem;
     font-family: 'Segoe UI';

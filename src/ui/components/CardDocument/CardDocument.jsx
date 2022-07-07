@@ -1,7 +1,7 @@
 import React from 'react';
 import './CardStyle.css'
 
-function CardDocument({AuthorName, TittleDescription, PageNumber, Cover}) {
+const CardDocument = ({AuthorName, TittleDescription, PageNumber, Cover}) => {
     return (
         <div className='overall'>
             <div className='cardDocument'>
