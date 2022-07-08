@@ -13,16 +13,16 @@ const Reviews = () => {
         console.log(files)
     }
     return (
-        <div className='container'>
-            <form className='formFile' onSubmit={handleSubmit}>
-                <p className='heading'>
+        <div className="container">
+            <form className="formFile" onSubmit={handleSubmit}>
+                <p className="heading">
                     Suba el documento pdf del trabajo que desea revisar,
                     el sistema verifica similaridad de los documentos contenidos
                     en la base de datos, ya depende del tutor tomar decisiones sobre dicho trabajo.
                 </p>
                 <InputFilesDoc fileChange={(files) => fileChange(files)} />
 
-                <button className='btnSubmit' type='submit' >Enviar</button>
+                <button className="btnSubmit" type="submit" >Enviar</button>
             </form>
         </div>
     )

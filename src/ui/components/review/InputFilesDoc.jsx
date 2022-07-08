@@ -27,7 +27,7 @@ const InputFilesDoc = ({ fileChange }) => {
     }
     return (
         <div
-            className='containerWrapper'
+            className="containerWrapper"
             ref={wrapRef}
             onDragEnter={onDragEnter}
             onDragLeave={onDragLeave}
@@ -35,20 +35,20 @@ const InputFilesDoc = ({ fileChange }) => {
         >
 
                 <input
-                    type='file'
+                    type="file"
                     onChange={handleChange}
                 />
                 {
                     fileList.length > 0 ? (
-                        <div className='containerFiles'>
+                        <div className="containerFiles">
                             {
                                 fileList.map((files, index) => (
-                                    <div key={index} className='containerUpload'>
+                                    <div key={index} className="containerUpload">
 
                                         <img src={PDFUpload} alt="" />
 
                                         <p>{`${files.name} ${(files.size / 1000000).toFixed(2)} MB`}</p>
-                                        <button className='btndelete' onClick={handleRemove}>X</button>
+                                        <button className="btndelete" onClick={handleRemove}>X</button>
                                     </div>
 
                                 ))
