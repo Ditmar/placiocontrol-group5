@@ -1,0 +1,41 @@
+[33mcommit 324e3efd10978f178c00b32ead7f640e80907aac[m[33m ([m[1;36mHEAD -> [m[1;32mfeature/login[m[33m)[m
+Author: LudimPuma <ludimpuma1@gmail.com>
+Date:   Wed Jun 29 00:14:26 2022 -0400
+
+    feature(common):puesto a revision de [login]
+
+[33mcommit 1eff2e2c21ad70d637a2f1a3aca2752e6d4661a3[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Ditmar <ditmarcastro@gmail.com>
+Date:   Fri Jun 24 23:04:02 2022 -0400
+
+    feat(common): readme update [sol-3]
+
+[33mcommit ccea1623f0a80859e4aab7d7f847d6fa26c1765f[m
+Author: Ditmar <ditmarcastro@gmail.com>
+Date:   Fri Jun 24 23:01:39 2022 -0400
+
+    feat(common): add material ui [sol-2]
+
+[33mcommit 502091f29fae9994059c5f9d59cfb9637f10d9f3[m
+Author: Ditmar <ditmarcastro@gmail.com>
+Date:   Fri Jun 24 22:50:15 2022 -0400
+
+    feat(common): base architecture [sol-1]
+
+[33mcommit 89025212f6339b985c4cb545458566a50862778f[m
+Author: Ditmar <ditmarcastro@gmail.com>
+Date:   Fri Jun 24 21:37:28 2022 -0400
+
+    feat(common): storybook up [WEBSITES]
+
+[33mcommit 9a1517aa4b3845daea1ac702d4516a75dc7b503d[m
+Author: Ditmar <ditmarcastro@gmail.com>
+Date:   Wed Jun 22 08:59:44 2022 -0400
+
+    feature(common): crete the architecture of system [WEBSITESPC-17]
+
+[33mcommit a3f87779e558c49c22c0cc54d196db63bef4555e[m
+Author: Ditmar <ditmarcastro@gmail.com>
+Date:   Wed Jun 15 08:33:06 2022 -0400
+
+    Initialize project using Create React App
