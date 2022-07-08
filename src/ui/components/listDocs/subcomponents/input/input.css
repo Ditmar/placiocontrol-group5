@@ -1,0 +1,19 @@
+.input-filter{
+    background-color: #F0F1F7;
+    width: 100%;
+    height: 42px;
+    border-radius: 8px;  
+    outline: none;  
+    border: 0;
+}
+@media screen and (max-width:570px){
+    .input-filter{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        height: 42px;
+        border-radius: 8px;  
+        outline: none;  
+        border: 0;
+    }
+}
