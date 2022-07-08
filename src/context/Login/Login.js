@@ -10,9 +10,7 @@ export const  Login=({label}) => {
     const [password, setPassword] = React.useState('');
     const [shown, setShown] = React.useState(false);
     const switchShown = () => setShown(!shown);
-    const onChange = ({ currentTarget }) => setPassword(currentTarget.value);
-    const [icon,setIcon]=useState(eyeOff);
-    
+    const onChange = ({ currentTarget }) => setPassword(currentTarget.value);    
     const [ handlerChangeForm] = useForm({email:"" , password: ""});
     const onSubmit = (event) => {
         event.preventDefault();
@@ -38,7 +36,7 @@ export const  Login=({label}) => {
                         <div className="box-password">
                             <label>PASSWORD</label>
                             <input type={shown ? 'text' : 'password'} placeholder="Password" value={password} onChange={onChange}></input>
-                            <span className="icon vector" onClick={switchShown}><Icon icon={icon} /></span>
+                            <span className="icon vector" onClick={switchShown}><Icon icon={eyeOff} /></span>
                         </div>
                             <button type="submit" className="button" ><a>Log in</a></button>
                         
