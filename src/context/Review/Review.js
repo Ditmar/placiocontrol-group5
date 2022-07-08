@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Reviews from '../../ui/components/review/Reviews';
 import './Review.css';
 

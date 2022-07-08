@@ -27,7 +27,7 @@ const InputFilesDoc = ({ fileChange }) => {
     }
     return (
         <div
-            className='inputDF'
+            className='containerWrapper'
             ref={wrapRef}
             onDragEnter={onDragEnter}
             onDragLeave={onDragLeave}
@@ -40,10 +40,10 @@ const InputFilesDoc = ({ fileChange }) => {
                 />
                 {
                     fileList.length > 0 ? (
-                        <div className="containerFiles">
+                        <div className='containerFiles'>
                             {
                                 fileList.map((files, index) => (
-                                    <div key={index} className="containerUpload">
+                                    <div key={index} className='containerUpload'>
 
                                         <img src={PDFUpload} alt="" />
 
@@ -60,6 +60,8 @@ const InputFilesDoc = ({ fileChange }) => {
             </div>
     )
 }
-
+InputFilesDoc.propTypes ={
+    fileChange: PropTypes.func.isRequired,
+}
 
 export default InputFilesDoc
