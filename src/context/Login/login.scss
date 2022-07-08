@@ -216,9 +216,7 @@ input{
     line-height: 1.25rem;
     
     letter-spacing: 0.019rem;
-   
     color: #4B506D;
-    
     opacity: 0.4;
 }
 .icon{
@@ -232,6 +230,7 @@ input{
     position: absolute;
     color: #9FA2B4;
 }
+
 button{
     position: absolute;
     height: 3rem;
@@ -270,7 +269,6 @@ button{
     left: 5.5rem;
     top: 32.625rem;
 }
-
 .second-end-text{
     position: absolute;
     height: 1.25rem;
@@ -295,22 +293,18 @@ button{
     left: calc(50% - 3.75rem/2 + 5.094rem);
     bottom: 2.5rem;
 }
-
 .first-end-text{
     position: absolute;
     width: 9.313rem;
     height: 1.25rem;
     left: calc(50% - 9.063rem/2 - 1.719rem);
     bottom: 0rem;
-
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 400;
     font-size: 0.875rem;
     line-height: 1.25rem;
-
     text-align: center;
     letter-spacing: 0.019rem;
-
     color: #9FA2B4;
 }
