@@ -1,5 +1,5 @@
-import React from "react";
-import { BtnDownload } from "../subcomponents/btnDownloader/BtnDownloader";
+import React from 'react';
+import { BtnDownload } from '../subcomponents/btnDownloader/BtnDownloader';
 export default {
     title: 'ui/components/listdocs/BtnDownload',
     component: BtnDownload,

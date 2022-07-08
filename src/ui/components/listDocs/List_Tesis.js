@@ -27,9 +27,9 @@ class TesisServices{
             {
                 urlImageAvatar:img8,
                 title:"Adding Images to Featured Posts",
-                autor:"Tom Cruise",
+                autor:"Matt Damon",
                 fechaPublicacion:"Updated 1 day ago",
-                ultimaEdicion:"6:30 PM",
+                ultimaEdicion:"8:00 AM",
                 descargas:"low",
                 fechaAuto:"on 24.05.2019"
             },
@@ -38,9 +38,9 @@ class TesisServices{
             {
                 urlImageAvatar:img3,
                 title:"When will I be charged this month?",
-                autor:"Tom Cruise",
+                autor:"Robert Downey",
                 fechaPublicacion:"Updated 1 day ago",
-                ultimaEdicion:"6:30 PM",
+                ultimaEdicion:"7:30 PM",
                 descargas:"heigh",
                 fechaAuto:"on 24.05.2019"
             },
@@ -48,45 +48,45 @@ class TesisServices{
             {
                 urlImageAvatar:img7,
                 title:"Payment not going through",
-                autor:"Tom Cruise",
+                autor:"Christian Bale",
                 fechaPublicacion:"Updated 1 day ago",
-                ultimaEdicion:"6:30 PM",
+                ultimaEdicion:"5:00 PM",
                 descargas:"normal",
                 fechaAuto:"on 24.05.2019"
             },
             {
                 urlImageAvatar:img6,
                 title:"Unable to add replies",
-                autor:"Tom Cruise",
+                autor:"Henry Cavil",
                 fechaPublicacion:"Updated 1 day ago",
-                ultimaEdicion:"6:30 PM",
+                ultimaEdicion:"4:00 PM",
                 descargas:"heigh",
                 fechaAuto:"on 24.05.2019"
             },
             {
                 urlImageAvatar:img4,
                 title:"Downtime since last week",
-                autor:"Tom Cruise",
+                autor:"Chris Evans",
                 fechaPublicacion:"Updated 1 day ago",
-                ultimaEdicion:"6:30 PM",
+                ultimaEdicion:"2:00 PM",
                 descargas:"normal",
                 fechaAuto:"on 24.05.2019"
             },
             {
                 urlImageAvatar:img10,
                 title:"Referral Bonus",
-                autor:"Tom Cruise",
+                autor:"Sam Smith",
                 fechaPublicacion:"Updated 1 day ago",
-                ultimaEdicion:"6:30 PM",
+                ultimaEdicion:"11:30 AM",
                 descargas:"heigh",
                 fechaAuto:"on 24.05.2019"
             },
             {
                 urlImageAvatar:img9,
                 title:"How do I change my password?",
-                autor:"Tom Cruise",
+                autor:"Steve Rogers",
                 fechaPublicacion:"Updated 1 day ago",
-                ultimaEdicion:"6:30 PM",
+                ultimaEdicion:"1:00 PM",
                 descargas:"heigh",
                 fechaAuto:"on 24.05.2019"
             },

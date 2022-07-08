@@ -1,5 +1,5 @@
 
-import React from "react";
+import React from 'react';
 import './input.css'
 export const Input = ({attribute, handleChange, param}) =>{
     return(
