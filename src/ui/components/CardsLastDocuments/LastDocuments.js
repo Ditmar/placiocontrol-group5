@@ -1,34 +1,14 @@
 import React from 'react';
 import './bootstrap.min.css';
 import './LastDocuments.css';
-
+import TitleComponent from './subcomponents/TitleComponent';
+import ListComponent from './subcomponents/ListComponent';
 const LastDocuments = () =>{
-    const documnets1 = {
-
-        title: 'Analisís de la investigación sobre la radio en Bolivia ...',
-        pages: '321 paj.',
-    };
-    const documnets2 = {
-
-        title: 'Analisis bibliometrico y de redes sociales en tesis ...',
-        pages: '120 paj.',
-    };
-   
     return <div class="contenedor">
-
         <ul className="list-group">   
-            <li className="list-group-item-first d-flex justify-content-between align-items-center">
-                <div><h3>Ultimos Documentos Publicados</h3>
-                    <h5><span className="opacity-25">Group: </span><span>Suport</span></h5></div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-               { documnets1.title}
-                <div class="cont"><a href="#" class="align-items-right">Ver detalles</a><span class="opacity-50" > {documnets1.pages}</span> </div>               
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
-                {documnets2.title}
-                <div class="cont"><a href="#" class="align-items-right">Ver detalles</a><span class="opacity-50" >  {documnets2.pages}</span> </div>
-            </li>
+            < TitleComponent title="Ultimos Documentos Publicados" group="Suport"/> 
+             < ListComponent description="Analisis de la investigacion sobre radio en bolivia ..." pages="321" />   
+             < ListComponent description="Analisis bibliometrico y de redes sociales en tesis ... " pages="120" />   
             <li class="list-group-item d-flex justify-content-between align-items-center">
                 
             </li>
