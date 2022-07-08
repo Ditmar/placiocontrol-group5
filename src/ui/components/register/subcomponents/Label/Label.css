@@ -1,0 +1,23 @@
+.label-content {
+    display: block;
+    margin: 0 0 0.039rem;
+    color: gray;
+    font-size: 12px;
+    font-weight: semibold;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    margin-left: 1.25rem;
+}
+
+.label-alert{
+    display: block;
+    margin: 0 0 0.625rem;
+    color: rgb(215, 8, 8);
+    font-size: 12px;
+    font-weight: semibold;
+    line-height: 1;
+    letter-spacing: .2em;
+    margin-bottom: 1.563rem;
+    margin-left: 1.25rem;
+}
