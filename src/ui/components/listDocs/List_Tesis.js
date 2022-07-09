@@ -33,8 +33,6 @@ class TesisServices{
                 descargas:"low",
                 fechaAuto:"on 24.05.2019"
             },
-         
-           
             {
                 urlImageAvatar:img3,
                 title:"When will I be charged this month?",
@@ -44,7 +42,6 @@ class TesisServices{
                 descargas:"heigh",
                 fechaAuto:"on 24.05.2019"
             },
-           
             {
                 urlImageAvatar:img7,
                 title:"Payment not going through",

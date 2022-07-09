@@ -26,8 +26,8 @@
     text-align: center;
 }
 .tr-tablle td div{
-    margin-bottom: 2px;
-    margin-top: 2px;
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .avatar{
@@ -90,6 +90,7 @@ td{
     color: #C5C7CD;
     display: flex;
     justify-content: center;
+    font-size: 15Ipx;
 }
 
 .edit-data{
@@ -104,8 +105,8 @@ td{
 .edit-data .edita-icon{
     margin-left: auto;
     margin-right: auto;
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
 }
 
 .edit-data .edita-fecha{

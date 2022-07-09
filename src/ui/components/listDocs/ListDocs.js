@@ -2,12 +2,11 @@ import React,{ useEffect, useState } from 'react';
 import TesisServices from './List_Tesis';
 
 
-import './listarTesis.css'
+import './listarTesis.scss'
 import { TableListTble } from './tableListTesis/TableListTesis';
 import  { Input } from './subcomponents/input/Input'
 
 export const ListDocsUi=()=>{
-
     const [listTesis, setLisTesis] = useState([]);
     const [title, setTitle] = useState('');
     const [autor, setAutor] = useState('');
