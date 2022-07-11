@@ -13,7 +13,7 @@ import { ListDocs } from "./listDocs/ListDocs"
 import { Home } from "./Home/Home"
 
 
-
+console.log('Navigation')
 const Navigation = () => {
     return (
         <BrowserRouter>

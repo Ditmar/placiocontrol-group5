@@ -1,9 +1,9 @@
-import React from "react";
-
-export  const ListDocs = () => {
-    return (
+import React from 'react';
+import  { ListDocsUi } from '../../ui/components/listDocs/ListDocs';
+export const ListDocs = () =>{
+    return(
         <div>
-            List page
+            <ListDocsUi />
         </div>
-    )
-}
+    );
+} 

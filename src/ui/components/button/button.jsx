@@ -1,5 +1,5 @@
 import { PropTypes } from "prop-types";
-import { React } from "react"; 
+import { React } from "react";
 export const Button = ({label, handleClick, backgroundColor, isShadow, size}) => {
     let scale = 1;
     const normalSize = 3.8;
