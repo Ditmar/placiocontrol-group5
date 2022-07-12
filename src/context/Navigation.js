@@ -12,7 +12,7 @@ import { Login } from "./Login/Login"
 import { ListDocs } from "./listDocs/ListDocs"
 import { Home } from "./Home/Home"
 import { Provider } from "react-redux";
-import store from "../store";
+import store from "../store/index";
 
 console.log('Navigation')
 const Navigation = () => {
