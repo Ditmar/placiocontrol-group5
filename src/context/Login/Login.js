@@ -11,7 +11,6 @@ import { authActions } from '../../store/index';
 import axios from "axios";
 import Swal from "sweetalert2";
 
-
 const api = "http://localhost:8000/server/autenthication/login";
 const cookies = new Cookies();
 export const  Login=({label}) => {
