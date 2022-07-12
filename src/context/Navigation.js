@@ -11,12 +11,14 @@ import { Register } from "./Register/Register"
 import { Login } from "./Login/Login"
 import { ListDocs } from "./listDocs/ListDocs"
 import { Home } from "./Home/Home"
-
+import { Provider } from "react-redux";
+import store from "../store";
 
 console.log('Navigation')
 const Navigation = () => {
     return (
-        <BrowserRouter>
+        <Provider store={store}>
+            <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />}>
                 </Route>
@@ -32,6 +34,8 @@ const Navigation = () => {
                 </Route>
             </Routes>
         </BrowserRouter>
+        </Provider>
+        
     )
 }
 export default Navigation;
