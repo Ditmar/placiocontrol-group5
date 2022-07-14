@@ -1,5 +1,5 @@
-import React from "react";
-import Title  from "../subcomponents/Title/Title";
+import React from 'react';
+import Title  from '../subcomponents/Title/Title';
 export default {
     title: 'ui/components/register/subcomponents/Title',
     component: Title
