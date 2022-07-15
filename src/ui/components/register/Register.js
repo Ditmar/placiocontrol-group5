@@ -1,13 +1,17 @@
-import React, {useState} from "react";
-import './Register.css';
+import React, {useState} from 'react';
 import Title from './subcomponents/Title/Title';
 import Label from './subcomponents/Label/Label';
-import Input from "./subcomponents/Input/Input";
+import Input from './subcomponents/Input/Input';
 import {emailValidation} from './utils/FieldValidation.js';
 import {passwordValidation} from './utils/FieldValidation.js';
 import {repasswordValidation} from './utils/FieldValidation.js';
+import { UseFetchRegister } from '../../../hooks/useFetchRegister';
+import './Register.css';
 
 export const Register = () => {
+
+    
+    
 
     const[user, setUser] = useState('');
     const[password, setPassword] = useState('');
@@ -19,17 +23,17 @@ export const Register = () => {
     const[hasError, setHasError] = useState(false);
 
     function handleChange(name, value) {
-        if (name === 'correo') {
+        if (name === 'email') {
             const [state, valueField] = emailValidation(value);
             setUserdError(state);
             setUser(valueField);
         } 
-        if ( name === 'contraseña' ) {
+        if ( name === 'password' ) {
             const [state, valueField] = passwordValidation(value);
             setPasswordError(state);
             setPassword(valueField);
         } 
-        if ( name === 'repetircontraseña' ) {
+        if ( name === 'repassword' ) {
             const [state, valueField] = repasswordValidation(value,password);
             setRepasswordError(state);
             setRepassword(valueField);
@@ -42,6 +46,7 @@ export const Register = () => {
             const accountData={user, password};
             const account = JSON.stringify(accountData);
             localStorage.setItem('account', account);
+            UseFetchRegister(account)
             setIsRegister(true);
         } else {
             setIsRegister(false);
@@ -58,29 +63,29 @@ export const Register = () => {
     }
 
     return (
-        <div className="prueba">
-        <div className="register-container">
+        <div className='prueba'>
+        <div className='register-container'>
             { isRegister ?
                 <>
-                    <form className="form-register">
+                    <form className='form-register'>
                         <br></br><br></br><br></br><br></br>
-                        <img className="logo" src="https://previews.123rf.com/images/koblizeek/koblizeek2001/koblizeek200100050/138262629-usuario-miembro-de-perfil-de-icono-de-hombre-vector-de-s%C3%ADmbolo-perconal-sobre-fondo-blanco-aislado-.jpg"/>
-                        <p className="title-one">Plagio Control</p>
+                        <img className='logo' src='https://previews.123rf.com/images/koblizeek/koblizeek2001/koblizeek200100050/138262629-usuario-miembro-de-perfil-de-icono-de-hombre-vector-de-s%C3%ADmbolo-perconal-sobre-fondo-blanco-aislado-.jpg'/>
+                        <p className='title-one'>Plagio Control</p>
                         <Title text='Register Plagio Control' />
-                        <p className="title-two">FELICIDADES SU CUENTA YA ESTA REGISTRADA!!!</p>
-                        <img className="logo2" src="https://www.descargarstickers.com/publico/static/miniatura/2020/08/746800.gif"/>
-                        <p className="title-three"><a href=""> Login </a></p>
+                        <p className='title-two'>FELICIDADES SU CUENTA YA ESTA REGISTRADA!!!</p>
+                        <img className='logo2' src='https://www.descargarstickers.com/publico/static/miniatura/2020/08/746800.gif'/>
+                        <p className='title-three'><a href=''> Login </a></p>
                     </form>
                 </>
             :
-            <div className="register-content"> 
-                <div id="id-form-register" className="form-register" onSubmit="return">
-                    <img className="logo" src="https://previews.123rf.com/images/koblizeek/koblizeek2001/koblizeek200100050/138262629-usuario-miembro-de-perfil-de-icono-de-hombre-vector-de-s%C3%ADmbolo-perconal-sobre-fondo-blanco-aislado-.jpg"/>
-                    <p className="title-one">Plagio Control</p>
+            <div className='register-content'> 
+                <div id='id-form-register' className='form-register' onSubmit='return'>
+                    <img className='logo' src='https://previews.123rf.com/images/koblizeek/koblizeek2001/koblizeek200100050/138262629-usuario-miembro-de-perfil-de-icono-de-hombre-vector-de-s%C3%ADmbolo-perconal-sobre-fondo-blanco-aislado-.jpg'/>
+                    <p className='title-one'>Plagio Control</p>
                     <Title text='Register Plagio Control' />
-                    <p className="title-two">Enter your email and password below</p>
+                    <p className='title-two'>Enter your email and password below</p>
                     {hasError &&
-                        <label className="label-input-error"> 
+                        <label className='label-input-error'> 
                             Uno o mas campos no cumplen con los requisitos <br></br>
                             Por favor ingreselos correctamente <br></br>
                         </label>
@@ -89,8 +94,8 @@ export const Register = () => {
                     <Label text='Email' />
                     <Input 
                         attribute={{
-                            id:'correo',
-                            name:'correo',
+                            id:'email',
+                            name:'email',
                             type:'email',
                             placeholder:'Email address'
                         }}
@@ -99,15 +104,15 @@ export const Register = () => {
                     />
                     {userError &&
                         <Label 
-                            text='Se debe ingresar una direccion de correo valida'
+                            text='Se debe ingresar una direccion de email valida'
                             param={userError}
                         />
                     }
                     <Label text='Password' />
                     <Input 
                         attribute={{
-                            id:'contraseña',
-                            name:'contraseña',
+                            id:'password',
+                            name:'password',
                             type:'password',
                             placeholder:'Password'
                         }}
@@ -116,15 +121,15 @@ export const Register = () => {
                     />
                     {passwordError &&
                         <Label 
-                            text='La contraseña debe tener 6 o mas caracteres'
+                            text='La password debe tener 6 o mas caracteres'
                             param={passwordError}
                         />
                     }
                     <Label text='Re. Password' />
                     <Input 
                         attribute={{
-                            id:'repetircontraseña',
-                            name:'repetircontraseña',
+                            id:'repassword',
+                            name:'repassword',
                             type:'password',
                             placeholder:'Repeat password'
                         }}
@@ -133,14 +138,14 @@ export const Register = () => {
                     />
                     {repasswordError &&
                         <Label 
-                            text='Este campo debe coincidir con la contraseña'
+                            text='Este campo debe coincidir con la password'
                             param={repasswordError}
                         />
                     }
                     <button className='sumbit-register' onClick={handleSubmit}>
                         Sing In
                     </button>
-                    <p className="title-three">¿Ya tienes una cuenta? <a href=""> Login </a></p>
+                    <p className='title-three'>¿Ya tienes una cuenta? <a href=''> Login </a></p>
                 </div> 
             </div>
             }
