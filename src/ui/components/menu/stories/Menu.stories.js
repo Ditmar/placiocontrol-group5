@@ -1,5 +1,5 @@
-import React from "react";
-import { Menu } from "../wrapper/Menu/Menu";
+import React from 'react';
+import { Menu } from '../wrapper/Menu/Menu';
 export default {
     title: 'ui/components/menuglobal/wrapper/menu',
     component: Menu,

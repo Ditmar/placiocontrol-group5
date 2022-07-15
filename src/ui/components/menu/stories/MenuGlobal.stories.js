@@ -1,5 +1,5 @@
-import React from "react";
-import { MenuGlobal} from "../MenuGlobal";
+import React from 'react';
+import { MenuGlobal} from '../MenuGlobal';
 export default {
     title: 'ui/components/menuglobal',
     component: MenuGlobal,

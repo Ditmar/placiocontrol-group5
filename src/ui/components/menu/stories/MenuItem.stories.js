@@ -1,5 +1,5 @@
-import React from "react";
-import { MenuItem } from "../wrapper/Menu/MenuItem/MenuItem";
+import React from 'react';
+import { MenuItem } from '../wrapper/Menu/MenuItem/MenuItem';
 export default {
     title: 'ui/components/menuglobal/wrapper/menu/menuitem',
     component: MenuItem,

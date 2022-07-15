@@ -1,10 +1,10 @@
 body {
     background-color: #F7F8FC;
     font-family: 'Mulish';
-    font-size: 18px;
+    font-size: 1.125rem;
     padding: 0;
     margin: 0;
-    margin-left: 50px;
+    margin-left: 3.125rem;
 }
 
 .container-menu-global {
