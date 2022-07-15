@@ -1,0 +1,52 @@
+.container-logo {
+    box-sizing: border-box;
+}
+
+.title-logo {
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    font-weight: 700;
+    font-size: 1.188rem;
+    line-height: 1.5rem;
+    color: #A4A6B3;
+    margin-left: 0.938rem;
+    margin-top: 3.125rem;
+    margin-bottom: 1.563rem;
+}
+
+.icon-logo {
+    overflow: hidden;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 2.5rem;
+    margin-top: 3.125rem;
+    margin-bottom: 0.938rem;
+}
+
+
+.image-logo {
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+
+.icon-logo-collapsed {
+    width: 0;
+    height: 3.75rem;
+    padding: 0;
+    margin: 0;
+    margin-top: 1.563rem;
+    margin-left: 0.75rem;
+    padding-bottom: 6.25rem;
+    color: #363740;
+}
+
+.title-logo-collapsed {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
