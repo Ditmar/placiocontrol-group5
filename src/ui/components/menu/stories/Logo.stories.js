@@ -1,5 +1,5 @@
-import React from "react";
-import { Logo } from "../wrapper/Logo/Logo";
+import React from 'react';
+import { Logo } from '../wrapper/Logo/Logo';
 export default {
     title: 'ui/components/menuglobal/wrapper/logo',
     component: Logo,

@@ -1,5 +1,5 @@
-import React from "react";
-import { Wrapper } from "../wrapper/Wrapper";
+import React from 'react';
+import { Wrapper } from '../wrapper/Wrapper';
 export default {
     title: 'ui/components/menuglobal/wrapper',
     component: Wrapper,
