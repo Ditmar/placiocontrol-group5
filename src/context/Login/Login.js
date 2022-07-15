@@ -1,23 +1,56 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './login.scss';
 import { Icon } from 'react-icons-kit'
 import {eyeOff} from 'react-icons-kit/feather/eyeOff'
-import { useState } from 'react';
-import useForm from '../../hooks/useForm';
 import { PropTypes } from 'prop-types';
 import "@fontsource/mulish";
-export const  Login=({label}) => {
-    const [password, setPassword] = React.useState('');
-    const [shown, setShown] = React.useState(false);
-    const switchShown = () => setShown(!shown);
-    const onChange = ({ currentTarget }) => setPassword(currentTarget.value);    
-    const [ handlerChangeForm] = useForm({email:"" , password: ""});
-    const onSubmit = (event) => {
-        event.preventDefault();
+import Swal from "sweetalert2";
+import UseForm from "../../hooks/useForm"
+const bd ="http://3.138.158.90:8000/server/autenthication/login";
+const api = "http://3.138.158.90:8000/server/";
+export const  Login=({label}) => {  
+    const [form,  handleChangeForm, handlerResetForm ] = UseForm({email:'' , password: ''});
+    const {email,password}=form;
+    
+    const iniciarSesion = (e) => {
+        e.preventDefault();
+        const dato = {
+            email:email,
+            password:password
+        };
+        fetch(bd, {
+            method: 'POST',
+            body: JSON.stringify(dato),
+            headers:{
+                'Content-Type': 'application/json'
+            }
+            }).then(res => res.json())
+            .catch(error => console.error('Error:', error))
+            .then(response => {
+                if(response ==='Error de login credenciales incorrectas'){
+                    Swal.fire({
+                        title: 'Err',
+                        text: 'Please put correct data',
+                    })
+                    console.log("Errorres");
+                }
+                else{
+                    Swal.fire({
+                        title: 'Congratulationsy',
+                        text: 'You are inside',
+                   }) 
+                    console.log("login");
+                }
+                    
+            }); 
+            
     }
+
+     const [shown, setShown] = React.useState(false);
+     const switchShown = () => setShown(!shown);
     return(
         <div className="container" >
-            <form className="container-login" onSubmit={onSubmit}>
+            <form className="container-login" onSubmit={iniciarSesion}>
                 <div className="container-cards">
                     <div className="container-sheet">
                         <p className="plagiarism-tytle">Login Plagio Control</p>
@@ -31,15 +64,17 @@ export const  Login=({label}) => {
                         <p className="text-email">Enter your email and password below</p>
                         <div className="box-email">
                             <label>EMAIL</label>
-                            <input type="email" placeholder="Email address"></input>
+                            <input type="email" name='email' placeholder="Email address" onChange={handleChangeForm}  ></input>
+                            
                         </div>
                         <div className="box-password">
                             <label>PASSWORD</label>
-                            <input type={shown ? 'text' : 'password'} placeholder="Password" value={password} onChange={onChange}></input>
+                            <input type={shown ? 'text' : 'password'} name='password' placeholder="Password" onChange={handleChangeForm} > 
+                            </input>
                             <span className="icon vector" onClick={switchShown}><Icon icon={eyeOff} /></span>
+                            
                         </div>
-                            <button type="submit" className="button" ><a>Log in</a></button>
-                        
+                            <button type="submit" className="button" ><a>Log in</a></button>  
                         <div className="acount-style">
                             <a href="/login" className="second-end-text">Sign up</a>
                             <span className="first-end-text">No tines una cuenta</span>
